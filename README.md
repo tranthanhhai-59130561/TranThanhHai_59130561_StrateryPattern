@@ -1,0 +1,1 @@
+# TranThanhHai_59130561_StrateryPattern
