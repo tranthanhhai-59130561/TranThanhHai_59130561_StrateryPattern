@@ -9,6 +9,11 @@ package BapTap1;
  *
  * @author Admin
  */
-public class Chia {
-    
+public class Chia implements ITinh{
+
+    @Override
+    public float tinh(float a, float b) {
+        return (a/b);
+    }
+        
 }

@@ -9,6 +9,11 @@ package BapTap1;
  *
  * @author Admin
  */
-public class Nhan {
+public class Nhan implements ITinh{
+
+    @Override
+    public float tinh(float a, float b) {
+        return a*b;
+    }
     
 }
