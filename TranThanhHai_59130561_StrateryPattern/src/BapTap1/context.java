@@ -19,7 +19,7 @@ public class context {
         this.tinhToan = tinhToan;
     }
     
-    public float ferformTinh(float a, float b)
+    public float tinh(float a, float b)
     {
         return tinhToan.tinh(a, b);
     }
