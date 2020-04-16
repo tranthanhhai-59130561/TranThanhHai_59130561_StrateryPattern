@@ -13,7 +13,16 @@ public class Chia implements ITinh{
 
     @Override
     public float tinh(float a, float b) {
-        return (a/b);
+        if(b == 0)
+            {
+                System.out.println("Khong chia duoc");
+            }
+        else
+            if (b != 0)
+            {
+                System.out.println("Ket qua la: ");
+            }
+        return a/b;
     }
-        
-}
+}       
+
