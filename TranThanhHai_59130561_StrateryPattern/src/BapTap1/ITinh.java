@@ -10,5 +10,5 @@ package BapTap1;
  * @author Admin
  */
 public interface ITinh {
-    
+    public float tinh(float a, float b);
 }

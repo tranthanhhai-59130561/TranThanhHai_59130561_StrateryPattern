@@ -10,5 +10,12 @@ package BapTap1;
  * @author Admin
  */
 public class context {
+    ITinh tinhToan;
+    public context()
+    {}
     
+    public void setTinhToan(ITinh tinhToan)
+    {
+        
+    }
 }
