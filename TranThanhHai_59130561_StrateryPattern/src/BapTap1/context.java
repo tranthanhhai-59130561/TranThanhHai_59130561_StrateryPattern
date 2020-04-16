@@ -16,6 +16,11 @@ public class context {
     
     public void setTinhToan(ITinh tinhToan)
     {
-        
+        this.tinhToan = tinhToan;
+    }
+    
+    public float ferformTinh(float a, float b)
+    {
+        return tinhToan.tinh(a, b);
     }
 }
