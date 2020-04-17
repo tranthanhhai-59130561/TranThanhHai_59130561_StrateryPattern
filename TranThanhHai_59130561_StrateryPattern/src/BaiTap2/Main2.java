@@ -18,11 +18,15 @@ public class Main2 {
     
     private static void inDS(ArrayList<HangHoa> dS){
         int tongTien = 0;
-        for (int i=0;i<dS.size();i++) {
-            System.out.println("Ten hang hoa: "+"\n"+dS.get(i).getTenHH()+", Gia:"+dS.get(i).getGia()+", Mo ta:"+dS.get(i).getMoTa());
+        int i;
+        
+        for (i=0;i<dS.size();i++) 
+        {            
+            System.out.println("TenHH "+(i+1)+": "+dS.get(i).getTenHH()+", Gia: "+dS.get(i).getGia()+", MoTa: "+dS.get(i).getMoTa());
             tongTien = tongTien + dS.get(i).getGia();
         }
-        System.out.println("Tien so tien gio hang: " + tongTien);
+        System.out.println("-> Tong so tien gio hang: " + tongTien);
+        System.out.println(" ");
     }
     
     public static void main(String[] args) {
