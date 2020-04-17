@@ -10,5 +10,12 @@ package BaiTap2;
  * @author Admin
  */
 public class HangHoa {
+    public String tenHH;
+    public int gia;
+    public String moTa;
+    
+    public HangHoa()
+    {}
+    
     
 }
