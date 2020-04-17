@@ -10,12 +10,16 @@ package BaiTap2;
  * @author Admin
  */
 public class HangHoa {
-    public String tenHH;
-    public int gia;
-    public String moTa;
+    String tenHH;
+    int gia;
+    String moTa;
     
-    public HangHoa()
-    {}
+    public HangHoa(String tenHH, int gia, String moTa)
+    {
+        this.gia = gia;
+        this.moTa = moTa;
+        this.tenHH = tenHH;
+    }
     
     
 }
