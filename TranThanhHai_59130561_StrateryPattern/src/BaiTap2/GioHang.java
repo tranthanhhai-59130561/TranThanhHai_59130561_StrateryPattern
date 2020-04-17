@@ -4,11 +4,17 @@
  * and open the template in the editor.
  */
 package BaiTap2;
-
+import java.util.ArrayList;
 /**
  *
  * @author Admin
  */
 public class GioHang {
-    
+        IThanhToan hinhThucTT;
+        ArrayList<HangHoa>  dSHH;
+        public void setHinhThucTT()
+        {
+            this.hinhThucTT = hinhThucTT;
+        }
+        
 }
