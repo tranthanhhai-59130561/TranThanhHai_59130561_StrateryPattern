@@ -15,12 +15,12 @@ public class ThanhToanOnline implements IThanhToan {
     public double thanhToan(int tienHang) {
         if(tienHang < 1000000)
         {
-            System.out.println("Khach hang duoc giam 5%: )");
+            //System.out.println("Khach hang duoc giam 5%: )");
             return 0.05*tienHang;
         }
         else
         {
-            System.out.println("Khach hang duoc giam 7%: ");
+            //System.out.println("Khach hang duoc giam 7%: ");
             return 0.07*tienHang;
         }
     }       

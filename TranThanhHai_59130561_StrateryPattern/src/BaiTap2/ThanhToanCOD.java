@@ -15,7 +15,7 @@ public class ThanhToanCOD implements IThanhToan{
     public double thanhToan(int tienHang) {
         if(tienHang > 2000000)
         {
-            System.out.println("Khach hang duoc giam 2%: ");
+            //System.out.println("Khach hang duoc giam 2%: ");
             return 0.02*tienHang;
         }
         else
