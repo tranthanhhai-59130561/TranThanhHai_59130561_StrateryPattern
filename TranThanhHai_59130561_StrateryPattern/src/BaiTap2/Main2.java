@@ -15,6 +15,16 @@ public class Main2 {
     /**
      * @param args the command line arguments
      */
+    
+    private static void inDS(ArrayList<HangHoa> dS){
+        int s = 0;
+        for (int i=0;i<dS.size();i++) {
+            System.out.println("--Ten hang:"+dS.get(i).getTenHH()+", Gia:"+dS.get(i).getGia()+", Mo ta:"+dS.get(i).getMoTa());
+            s = s + dS.get(i).getGia();
+        }
+        System.out.println("Tien hang: " + s);
+    }
+    
     public static void main(String[] args) {
         // TODO code application logic here
         HangHoa hH1 = new HangHoa("Ram 8GB", 900000, "Gia TB, Dung luong TB");
@@ -29,6 +39,7 @@ public class Main2 {
         ArrayList <HangHoa> dS1 = new ArrayList<>();
         dS1.add(hH4);
         dS1.add(hH1);
+        inDS(dS1);
         
         gH1.setHangHoa();
         System.out.println("Tong so tien gio hang 1: "+gH1.thanhToan());
@@ -40,9 +51,9 @@ public class Main2 {
         ArrayList <HangHoa> dS2 = new ArrayList<>();
         dS2.add(hH3);
         dS2.add(hH2);
+        inDS(dS2);
         
         gH2.setHangHoa();
-        System.out.println("Tong so tien gio hang 2: "+gH2.thanhToan());
-        
+        System.out.println("Tong so tien gio hang 2: "+gH2.thanhToan());        
     }
 }
