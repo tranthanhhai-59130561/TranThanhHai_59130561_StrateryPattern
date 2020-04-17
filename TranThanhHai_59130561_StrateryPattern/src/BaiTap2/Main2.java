@@ -22,6 +22,7 @@ public class Main2 {
         HangHoa hH3 = new HangHoa("ram 16GB", 1900000, "Gia cao, dung luong cao");
         HangHoa hH4 = new HangHoa("Ram 32GB", 3900000, "Gia rat cao, dung luong rat cao");
         
+        // Gio Hang 1
         GioHang gH1 = new GioHang();
         gH1.setHinhThucTT(new ThanhToanCOD());
         
@@ -29,6 +30,10 @@ public class Main2 {
         dS1.add(hH4);
         dS1.add(hH1);
         
+        gH1.setHangHoa();
+        System.out.println("Tong so tien gio hang 1: "+gH1.thanhToan());
+        
+        // Gio Hang 2
         GioHang gH2 = new GioHang();
         gH2.setHinhThucTT(new ThanhToanOnline());
         
@@ -36,6 +41,8 @@ public class Main2 {
         dS2.add(hH3);
         dS2.add(hH2);
         
+        gH2.setHangHoa();
+        System.out.println("Tong so tien gio hang 2: "+gH2.thanhToan());
         
     }
 }
