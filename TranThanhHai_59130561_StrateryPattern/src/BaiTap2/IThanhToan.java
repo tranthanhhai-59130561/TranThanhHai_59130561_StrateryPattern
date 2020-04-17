@@ -10,5 +10,5 @@ package BaiTap2;
  * @author Admin
  */
 public interface IThanhToan {
-    
+        public double thanhToan(int tienHang);
 }
