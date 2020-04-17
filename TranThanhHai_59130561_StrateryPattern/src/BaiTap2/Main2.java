@@ -17,12 +17,12 @@ public class Main2 {
      */
     
     private static void inDS(ArrayList<HangHoa> dS){
-        int s = 0;
+        int tongTien = 0;
         for (int i=0;i<dS.size();i++) {
             System.out.println("Ten hang hoa: "+"\n"+dS.get(i).getTenHH()+", Gia:"+dS.get(i).getGia()+", Mo ta:"+dS.get(i).getMoTa());
-            s = s + dS.get(i).getGia();
+            tongTien = tongTien + dS.get(i).getGia();
         }
-        System.out.println("Tien hang: " + s);
+        System.out.println("Tien so tien gio hang: " + tongTien);
     }
     
     public static void main(String[] args) {
