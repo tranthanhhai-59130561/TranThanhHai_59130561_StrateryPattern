@@ -12,7 +12,8 @@ import java.util.ArrayList;
 public class GioHang {
         IThanhToan hinhThucTT;
         ArrayList<HangHoa>  dSHH;
-        public void setHinhThucTT()
+        
+        public void setHinhThucTT(IThanhToan hinhThucTT)
         {
             this.hinhThucTT = hinhThucTT;
         }
