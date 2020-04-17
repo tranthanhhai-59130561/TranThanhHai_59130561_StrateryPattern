@@ -21,5 +21,19 @@ public class HangHoa {
         this.tenHH = tenHH;
     }
     
+    public String getTenHH()
+    {
+        return tenHH;
+    }
+    
+    public int getGia()
+    {
+        return gia;
+    }
+    
+    public String getMoTa()
+    {
+        return moTa;
+    }
     
 }
