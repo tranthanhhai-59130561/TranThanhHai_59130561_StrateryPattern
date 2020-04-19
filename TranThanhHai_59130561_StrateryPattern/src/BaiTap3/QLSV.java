@@ -22,4 +22,17 @@ public class QLSV {
     {
         this.iSoSanh = iSoSanh;
     }
+    
+    public void sapXep()
+    {
+        SinhVien temp ;
+        for(int i = 0; i < dsSV.size(); i++){
+            for(int j = i + 1; j <= dsSV.size()-1; j++)
+                if(iSoSanh.soSanh(dsSV.get(i),dsSV.get(j)) == 1){
+                    temp = dsSV.get(i);
+                    dsSV.set(i,dsSV.get(j));
+                    dsSV.set(j,temp);
+                }
+        }
+    }
 }
