@@ -26,9 +26,19 @@ public class SinhVien {
         return hoTen;
     }
     
+    public void setHoTen(String hoTen)
+    {
+        this.hoTen = hoTen; 
+    }
+    
     public Date getNgaySinh()
     {
         return ngaySinh;       
+    }
+    
+    public void setNgaySinh(Date ngaySinh)
+    {
+        this.ngaySinh = ngaySinh;
     }
     
     public float getDiemTB()
@@ -36,5 +46,9 @@ public class SinhVien {
         return diemTB;
     }
     
+    public void setDiemTB(float diemTB)
+    {
+        this.diemTB = diemTB;
+    }
     
 }
