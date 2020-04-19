@@ -26,13 +26,25 @@ public class QLSV {
     public void sapXep()
     {
         SinhVien temp ;
-        for(int i = 0; i < dsSV.size(); i++){
-            for(int j = i + 1; j <= dsSV.size()-1; j++)
+        int i, j;
+        for(i = 0; i < dsSV.size(); i++){
+            for(j = i + 1; j <= dsSV.size()-1; j++)
                 if(iSoSanh.soSanh(dsSV.get(i),dsSV.get(j)) == 1){
                     temp = dsSV.get(i);
                     dsSV.set(i,dsSV.get(j));
                     dsSV.set(j,temp);
                 }
+        }
+    }
+    
+    public void inDS()
+    {   
+        int i;
+        for(i=0; i<dsSV.size(); i++)
+        {
+            SinhVien sv = dsSV.get(i);
+            System.out.println(i+1 + ". Ho ten: " + sv.getHoTen() + ", Ngay sinh: " + sv.getNgaySinh() + 
+                                ", Diem TB: " + sv.getDiemTB());
         }
     }
 }
