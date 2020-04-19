@@ -20,4 +20,21 @@ public class SinhVien {
         this.ngaySinh = ngaySinh;
         this.diemTB = diemTB;
     }
+    
+    public String getHoTen()
+    {
+        return hoTen;
+    }
+    
+    public Date getNgaySinh()
+    {
+        return ngaySinh;       
+    }
+    
+    public float getDiemTB()
+    {
+        return diemTB;
+    }
+    
+    
 }
